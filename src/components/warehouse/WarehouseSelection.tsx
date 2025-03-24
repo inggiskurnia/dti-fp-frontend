@@ -7,7 +7,7 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import { useQuery } from "@tanstack/react-query";
-import { getAllWarehouses } from "@/app/api/warehouse/getWarehouses";
+import { getAllWarehouses } from "@/api/warehouse/getWarehouses";
 import { useSession } from "next-auth/react";
 import { useProductMutation } from "@/store/productMutationStore";
 import { userRoles } from "@/constant/userConstant";

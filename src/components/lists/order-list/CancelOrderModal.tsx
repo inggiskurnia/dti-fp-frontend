@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import { useMutation } from "@tanstack/react-query";
-import { cancelOrder } from "@/app/api/transaction/cancelOrder";
+import { cancelOrder } from "@/api/transaction/cancelOrder";
 import { Loader2, TriangleAlert } from "lucide-react";
 
 type CancelOrderModalProps = {

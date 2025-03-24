@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/select";
 import { useQuery } from "@tanstack/react-query";
 import { ProductMutationType } from "@/types/models/productMutation";
-import { getAllProductMutationType } from "@/app/api/product-mutation/getProductMutationType";
+import { getAllProductMutationType } from "@/api/product-mutation/getProductMutationType";
 import { useSession } from "next-auth/react";
 import { ArrowUpDown } from "lucide-react";
 

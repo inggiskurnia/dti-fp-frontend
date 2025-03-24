@@ -1,11 +1,11 @@
 "use client";
 
-import { createGatewayTransaction } from "@/app/api/transaction/createGatewayTransaction";
-import { createManualTransaction } from "@/app/api/transaction/createManualTransaction";
+import { createGatewayTransaction } from "@/api/transaction/createGatewayTransaction";
+import { createManualTransaction } from "@/api/transaction/createManualTransaction";
 import {
   getAllAddress,
   getMainAddress,
-} from "@/app/api/transaction/getUserAddresses";
+} from "@/api/transaction/getUserAddresses";
 import CartItemsList from "@/components/checkout/CartItemsList";
 import CheckoutSummary from "@/components/checkout/CheckoutSummary";
 import ShippingAddress from "@/components/checkout/ShippingAddress";

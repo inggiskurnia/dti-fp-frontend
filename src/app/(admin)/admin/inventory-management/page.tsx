@@ -1,6 +1,5 @@
 "use client";
 
-import { getPaginatedWarehouseInventories } from "@/app/api/warehouse-inventories/getWarehouseInventories";
 import ImageComponent from "@/components/common/ImageComponent";
 import { DeleteInventoryDialog } from "@/components/inventory-management/DeleteInventoryDialog";
 import InventoryManagementHeader from "@/components/inventory-management/InventoryManagementHeader";
@@ -27,6 +26,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useInventoryAdmin } from "@/store/inventoryAdminStore";
 import { useSession } from "next-auth/react";
 import InventoryManagementFilterSelection from "@/components/inventory-management/IventoryManagementFilterSelection";
+import { getPaginatedWarehouseInventories } from "@/api/warehouse-inventories/getWarehouseInventories";
 
 const InventoryManagementPage = () => {
   const { inventoryPage, productCategoryId, searchQuery, setInventoryPage } =

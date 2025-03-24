@@ -9,16 +9,15 @@ import { useUserAddressStore } from "@/store/userAddressStore";
 import { ProductSummary } from "@/types/models/products";
 import { LOCATION_RADIUS } from "@/constant/locationConstant";
 import { useSession } from "next-auth/react";
-import { getNearbyProduct } from "../api/product/getProducts";
 import { toast } from "@/hooks/use-toast";
 import DeliveryLocationDialog from "@/components/location/DeliveryLocationDialog";
 import { useProductUser } from "@/store/productUserStore";
 import PaginationComponent from "@/components/lists/order-list/PaginationComponent";
 import ProductCategoryUserSelection from "@/components/product/ProductCategoryUserSelection";
-import LandingPage from "@/components/landing-page/LandingPage";
 import ProductCategorySelection from "@/components/product-management/categories/ProductCategorySelection";
 import ProductCardLoading from "@/components/product/ProductCardLoading";
 import ProductCard from "@/components/product/productCard";
+import { getNearbyProduct } from "@/api/product/getProducts";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -101,14 +100,13 @@ export default function Home() {
   }, [products, setCartItems]);
 
   useEffect(() => {
-    window.scrollTo({ top: 590, behavior: "smooth" });
-  }, [productsFetching]);
+    window.scrollTo({ top: 20, behavior: "smooth" });
+  }, [productPage, productCategoryId, searchQuery, userAddress]);
 
   return (
     <>
-      <LandingPage />
-      <div className="mb-12 mt-6 min-h-[calc(100vh-70px)] w-full">
-        <main className="mx-auto mt-16 flex w-full max-w-[1340px] items-center justify-center md:px-6">
+      <div className="mb-12 mt-4 min-h-[calc(100vh-70px)] w-full">
+        <main className="mx-auto mt-10 flex w-full max-w-[1340px] items-center justify-center md:px-6">
           <div className="grid w-full grid-cols-1 gap-8 px-8 md:grid-cols-4">
             <div className="flex h-fit flex-col gap-4 md:sticky md:top-24 md:col-span-1 md:gap-8">
               <div className="flex flex-col gap-2">

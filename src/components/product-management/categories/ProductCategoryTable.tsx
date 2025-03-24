@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import { useQuery } from "@tanstack/react-query";
 import { ADMIN_PRODUCT_CATEGORY_PER_PAGE } from "@/constant/productConstant";
-import { getPaginatedProductCategories } from "@/app/api/product/getProducts";
+import { getPaginatedProductCategories } from "@/api/product/getProducts";
 import { PaginationAdmin } from "@/components/pagination/PaginationAdmin";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useSession } from "next-auth/react";

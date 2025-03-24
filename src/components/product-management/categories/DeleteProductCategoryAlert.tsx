@@ -1,13 +1,13 @@
 import React, { FC, useState } from "react";
 import AlertDialogComponent from "@/components/common/AlertDialogComponent";
-import { deleteProductCategoryById } from "@/app/api/product/deleteProducts";
+import { deleteProductCategoryById } from "@/api/product/deleteProducts";
 import { ProductCategory } from "@/types/models/products";
 import { useProductAdmin } from "@/store/productAdminStore";
 import { useSession } from "next-auth/react";
 import { toast } from "@/hooks/use-toast";
 import DeleteIcon from "@/components/icon/DeleteIcon";
 import { useQuery } from "@tanstack/react-query";
-import { getProductMutationHistory } from "@/app/api/product-mutation/getProductMutation";
+import { getProductMutationHistory } from "@/api/product-mutation/getProductMutation";
 import { ProductMutationConstant } from "@/constant/productMutationConstant";
 import { useProductMutation } from "@/store/productMutationStore";
 

@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import { ChartConfig } from "@/components/ui/chart";
 import AreaChartCard from "../common/AreaChartCard";
 import { useQuery } from "@tanstack/react-query";
-import { getDailyTotalProductMutation } from "@/app/api/order/getCustomerOrders";
+import { getDailyTotalProductMutation } from "@/api/order/getCustomerOrders";
 import { useReport } from "@/store/reportStore";
 import { useProductMutation } from "@/store/productMutationStore";
 import { formatDateHyphen, formatPrice } from "@/utils/formatter";

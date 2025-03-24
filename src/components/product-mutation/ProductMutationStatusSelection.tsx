@@ -8,7 +8,7 @@ import {
 import { ProductMutationType } from "@/types/models/productMutation";
 import React, { FC } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { getAllProductMutationStatus } from "@/app/api/product-mutation/getProductMutationStatus";
+import { getAllProductMutationStatus } from "@/api/product-mutation/getProductMutationStatus";
 import { useSession } from "next-auth/react";
 import { Clock } from "lucide-react";
 

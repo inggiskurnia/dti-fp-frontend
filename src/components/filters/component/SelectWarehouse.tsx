@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/select";
 import { useQuery } from "@tanstack/react-query";
 import { useOrderStore } from "@/store/orderStore";
-import { getAllWarehouses } from "@/app/api/warehouse/getWarehouses";
+import { getAllWarehouses } from "@/api/warehouse/getWarehouses";
 
 const SelectWarehouse: FC = () => {
   const { warehouseId, setFilters } = useOrderStore();
@@ -35,7 +35,7 @@ const SelectWarehouse: FC = () => {
           })
         }
       >
-        <SelectTrigger className="w-full border border-gray-300 bg-white text-lg text-gray-600 px-3 py-[26px] rounded-lg shadow-sm hover:border-green-500 focus:ring-2 focus:ring-green-500 transition-all">
+        <SelectTrigger className="w-full rounded-lg border border-gray-300 bg-white px-3 py-[26px] text-lg text-gray-600 shadow-sm transition-all hover:border-green-500 focus:ring-2 focus:ring-green-500">
           <SelectValue placeholder="Select Warehouse" />
         </SelectTrigger>
         <SelectContent>

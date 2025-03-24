@@ -7,7 +7,7 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import { useQuery } from "@tanstack/react-query";
-import { getNearbyWarehouseByProduct } from "@/app/api/warehouse/getWarehouses";
+import { getNearbyWarehouseByProduct } from "@/api/warehouse/getWarehouses";
 import { formatDistance } from "@/utils/formatter";
 import { useProductMutation } from "@/store/productMutationStore";
 import { useSession } from "next-auth/react";

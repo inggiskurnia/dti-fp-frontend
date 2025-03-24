@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { getPaginatedProducts } from "@/app/api/product/getProducts";
+import { getPaginatedProducts } from "@/api/product/getProducts";
 import { ADMIN_PRODUCT_PER_PAGE } from "@/constant/productConstant";
 import { Card, CardContent } from "@/components/ui/card";
 import ImageComponent from "@/components/common/ImageComponent";

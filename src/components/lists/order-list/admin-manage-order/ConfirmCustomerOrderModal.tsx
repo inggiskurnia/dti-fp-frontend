@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import { useMutation } from "@tanstack/react-query";
-import { ConfirmPaymentOrder } from "@/app/api/transaction/admin/confirmPaymentOrder";
+import { ConfirmPaymentOrder } from "@/api/transaction/admin/confirmPaymentOrder";
 import { Loader2, VerifiedIcon } from "lucide-react";
 import Image from "next/image";
 

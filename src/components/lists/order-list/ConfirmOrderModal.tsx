@@ -14,7 +14,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { useMutation } from "@tanstack/react-query";
-import { confirmOrder } from "@/app/api/transaction/confirmOrder";
+import { confirmOrder } from "@/api/transaction/confirmOrder";
 import { Loader2, TriangleAlert } from "lucide-react";
 
 type ConfirmOrderModalProps = {

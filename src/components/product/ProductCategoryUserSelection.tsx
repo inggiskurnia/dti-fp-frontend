@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { getProductCategory } from "@/app/api/product/getProducts";
+import { getProductCategory } from "@/api/product/getProducts";
 import { useProductUser } from "@/store/productUserStore";
 
 const ProductCategoryUserSelection: FC = () => {

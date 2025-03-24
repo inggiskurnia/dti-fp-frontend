@@ -18,7 +18,7 @@ import { useSession } from "next-auth/react";
 import {
   approveManualProductMutation,
   declineManualProductMutation,
-} from "@/app/api/product-mutation/putProductMutation";
+} from "@/api/product-mutation/putProductMutation";
 import { useProductMutation } from "@/store/productMutationStore";
 
 interface ProductMutationReviewDialogProps {

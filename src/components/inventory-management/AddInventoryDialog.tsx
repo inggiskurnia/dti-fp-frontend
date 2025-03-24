@@ -15,7 +15,7 @@ import { Label } from "@radix-ui/react-label";
 import ProductSelection from "../product-management/products/ProductSelection";
 import QuantityChange from "../common/QuantityChange";
 import { useProductMutation } from "@/store/productMutationStore";
-import { createWarehouseInventory } from "@/app/api/warehouse-inventories/postWarehouseInventories";
+import { createWarehouseInventory } from "@/api/warehouse-inventories/postWarehouseInventories";
 import { Textarea } from "../ui/textarea";
 import { useSession } from "next-auth/react";
 import { toast } from "@/hooks/use-toast";

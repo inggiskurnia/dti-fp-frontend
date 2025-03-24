@@ -14,7 +14,7 @@ import {
   getAllProductList,
   getProductExcludeFilter,
   getProductIncludeFilter,
-} from "@/app/api/product/getProducts";
+} from "@/api/product/getProducts";
 import { useProductMutation } from "@/store/productMutationStore";
 import { ProductBasic } from "@/types/models/products";
 import { useSession } from "next-auth/react";

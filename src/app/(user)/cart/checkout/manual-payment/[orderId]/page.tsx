@@ -13,7 +13,7 @@ import { useCountdownTimer } from "@/hooks/useCountdownTimer";
 import { ImagePlus, Loader2 } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { formatDateTime, formatPrice } from "@/utils/formatter";
-import { uploadImageManualTransaction } from "@/app/api/transaction/uploadImageManualTransaction";
+import { uploadImageManualTransaction } from "@/api/transaction/uploadImageManualTransaction";
 import Image from "next/image";
 
 const ManualPatmentPage = () => {
@@ -154,14 +154,14 @@ const ManualPatmentPage = () => {
 
             {/* Payment details */}
             <div className="mt-6 flex w-full flex-col rounded-xl border p-6">
-              <div className="flex md:flex-row flex-col items-center justify-between">
+              <div className="flex flex-col items-center justify-between md:flex-row">
                 <span>Total payment</span>
                 <span className="text-lg font-bold">
                   {formatPrice(String(data?.data.totalAmount))}
                 </span>
               </div>
               <Separator className="my-3" />
-              <div className="flex md:flex-row flex-col items-center justify-between">
+              <div className="flex flex-col items-center justify-between md:flex-row">
                 <span>Invoice code</span>
                 <span className="text-lg font-bold">
                   {data?.data.invoiceCode}
@@ -253,7 +253,7 @@ const ManualPatmentPage = () => {
                 onClick={handleUploadPaymentImage}
               >
                 {loading ? (
-                  <div className="flex gap-2 items-center">
+                  <div className="flex items-center gap-2">
                     <Loader2 className="mr-2 h-5 w-5 animate-spin" />{" "}
                     Uploading...
                   </div>

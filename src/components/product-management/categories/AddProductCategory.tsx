@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useProductAdmin } from "@/store/productAdminStore";
-import { createProductCategory } from "@/app/api/product/createProduct";
+import { createProductCategory } from "@/api/product/createProduct";
 import { toast } from "@/hooks/use-toast";
 
 const AddProductCategory = () => {

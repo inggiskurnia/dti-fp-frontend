@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useQuery } from "@tanstack/react-query";
-import { getUserAddress } from "@/app/api/user/getUsers";
+import { getUserAddress } from "@/api/user/getUsers";
 import UserAddressCard from "@/components/location/UserAddressCard";
 import { useUserAddressStore } from "@/store/userAddressStore";
 import { toast } from "@/hooks/use-toast";
@@ -18,7 +18,7 @@ import { ChevronDown, LocateFixed, RotateCcw } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useSession } from "next-auth/react";
 import { useProductUser } from "@/store/productUserStore";
-import { getDetailAddress } from "@/app/api/common/getLocation";
+import { getDetailAddress } from "@/api/common/getLocation";
 import { UserAddress } from "@/types/models/users";
 import { cn } from "@/lib/utils";
 

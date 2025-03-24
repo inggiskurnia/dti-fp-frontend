@@ -1,6 +1,6 @@
 "use client";
 
-import { SendCustomerOrder } from "@/app/api/transaction/admin/sendCustomerOrder";
+import { SendCustomerOrder } from "@/api/transaction/admin/sendCustomerOrder";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -45,7 +45,7 @@ const SendCustomerOrderModal: FC<SendCustomerOrderModalProps> = ({
       setIsOpen(false);
       setTimeout(() => {
         window.location.reload();
-      }, 2000); 
+      }, 2000);
     },
   });
 

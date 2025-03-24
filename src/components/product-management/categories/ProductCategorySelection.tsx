@@ -7,7 +7,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useQuery } from "@tanstack/react-query";
-import { getProductCategory } from "@/app/api/product/getProducts";
+import { getProductCategory } from "@/api/product/getProducts";
 import { Grid2X2 } from "lucide-react";
 
 interface ProductCategorySelectionProps {

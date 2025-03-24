@@ -4,14 +4,14 @@ import React, { FC, useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ProductDetail, ProductForm } from "@/types/models/products";
-import { postFileBuilderIo } from "@/app/api/builder-io/postBuilderIo";
+import { postFileBuilderIo } from "@/api/builder-io/postBuilderIo";
 import { Button } from "../../ui/button";
 import ProductCategorySelection from "@/components/product-management/categories/ProductCategorySelection";
 import { toast } from "@/hooks/use-toast";
 import ProductImageUpload from "@/components/product-management/products/ProductImageUpload";
-import { updateProductById } from "@/app/api/product/putProducts";
+import { updateProductById } from "@/api/product/putProducts";
 import { useParams, useRouter } from "next/navigation";
-import { createProduct } from "@/app/api/product/createProduct";
+import { createProduct } from "@/api/product/createProduct";
 import AlertDialogComponent from "@/components/common/AlertDialogComponent";
 import { useSession } from "next-auth/react";
 

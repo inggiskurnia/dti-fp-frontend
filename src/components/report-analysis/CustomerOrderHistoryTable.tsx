@@ -3,7 +3,7 @@ import { useSession } from "next-auth/react";
 import { useReport } from "@/store/reportStore";
 import { useProductMutation } from "@/store/productMutationStore";
 import { useQuery } from "@tanstack/react-query";
-import { getHistoryCustomerOrders } from "@/app/api/order/getCustomerOrders";
+import { getHistoryCustomerOrders } from "@/api/order/getCustomerOrders";
 import { ADMIN_CUSTOMER_ORDER_REPORT_PER_PAGE } from "@/constant/productConstant";
 import { Skeleton } from "@/components/ui/skeleton";
 import {

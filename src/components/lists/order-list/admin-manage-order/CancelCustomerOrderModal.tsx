@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { cancelOrder } from "@/app/api/transaction/cancelOrder";
+import { cancelOrder } from "@/api/transaction/cancelOrder";
 import { useMutation } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Loader2, TriangleAlert } from "lucide-react";
@@ -35,7 +35,7 @@ const CancelCustomerOrderModal: FC<CancelCustomerOrderModalProps> = ({
       setIsOpen(false);
       setTimeout(() => {
         window.location.reload();
-      }, 2000); 
+      }, 2000);
     },
   });
 

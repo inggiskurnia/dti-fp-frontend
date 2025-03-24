@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useQuery } from "@tanstack/react-query";
-import { getDetailProductMutationById } from "@/app/api/product-mutation/getProductMutation";
+import { getDetailProductMutationById } from "@/api/product-mutation/getProductMutation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Loader2 } from "lucide-react";

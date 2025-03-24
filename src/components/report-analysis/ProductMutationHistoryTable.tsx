@@ -1,4 +1,4 @@
-import { getProductMutationHistory } from "@/app/api/product-mutation/getProductMutation";
+import { getProductMutationHistory } from "@/api/product-mutation/getProductMutation";
 import { useQuery } from "@tanstack/react-query";
 import {
   Table,

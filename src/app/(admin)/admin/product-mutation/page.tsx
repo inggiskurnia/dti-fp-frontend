@@ -1,6 +1,6 @@
 "use client";
 
-import { getPaginatedProductMutation } from "@/app/api/product-mutation/getProductMutation";
+import { getPaginatedProductMutation } from "@/api/product-mutation/getProductMutation";
 import ProductMutationCard from "@/components/product-mutation/ProductMutationCard";
 import ProductMutationHeader from "@/components/product-mutation/ProductMutationHeader";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";

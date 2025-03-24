@@ -1,4 +1,4 @@
-import { getAllCustomerOrders } from "@/app/api/order/getCustomerOrders";
+import { getAllCustomerOrders } from "@/api/order/getCustomerOrders";
 import { useQuery } from "@tanstack/react-query";
 
 export const useOrders = (

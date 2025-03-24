@@ -2,7 +2,7 @@ import { FC } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useReport } from "@/store/reportStore";
 import { useProductMutation } from "@/store/productMutationStore";
-import { getProductMutationReportTotal } from "@/app/api/product-mutation/getProductMutation";
+import { getProductMutationReportTotal } from "@/api/product-mutation/getProductMutation";
 import { formatDateHyphen } from "@/utils/formatter";
 import { useSession } from "next-auth/react";
 

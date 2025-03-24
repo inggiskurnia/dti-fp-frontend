@@ -5,10 +5,10 @@ import { useProductAdmin } from "@/store/productAdminStore";
 import { useSession } from "next-auth/react";
 import { useProductMutation } from "@/store/productMutationStore";
 import { useQuery } from "@tanstack/react-query";
-import { getProductMutationHistory } from "@/app/api/product-mutation/getProductMutation";
+import { getProductMutationHistory } from "@/api/product-mutation/getProductMutation";
 import { ProductMutationConstant } from "@/constant/productMutationConstant";
 import { toast } from "@/hooks/use-toast";
-import { deleteProductById } from "@/app/api/product/deleteProducts";
+import { deleteProductById } from "@/api/product/deleteProducts";
 
 interface DeleteProductAlertProps {
   id: number;

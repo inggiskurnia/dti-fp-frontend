@@ -1,4 +1,4 @@
-import { deleteWarehouseInventoryById } from "@/app/api/warehouse-inventories/deleteWarehouseInventories";
+import { deleteWarehouseInventoryById } from "@/api/warehouse-inventories/deleteWarehouseInventories";
 import {
   AlertDialog,
   AlertDialogAction,
