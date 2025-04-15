@@ -28,6 +28,7 @@ const DeleteProductAlert: FC<DeleteProductAlertProps> = ({ id, name }) => {
         page: 0,
         limit: 1,
         productMutationStatusId: ProductMutationConstant.STATUS_PENDING,
+        productId: id,
         destinationWarehouseId,
       }),
   });
